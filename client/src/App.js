@@ -5,11 +5,12 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>We're doing it!</h1>
+    <div className="app">
+      <h1>Netflix Clone</h1>
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
