@@ -1,6 +1,14 @@
 .row {
-  color: white;
   margin-left: 20px;
+  color: #fff;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
 }
 
 .row_posters {
@@ -14,17 +22,8 @@
   display: none;
 }
 
-.row_poster {
-  object-fit: contain;
-  width: 100%;
-  max-height: 100px;
-  margin-right: 10px;
-  transition: transform 450ms;
-}
-
 .row_poster:hover {
   transform: scale(1.08);
-  opacity: 1;
 }
 
 .row_posterLarge {
@@ -33,5 +32,4 @@
 
 .row_posterLarge:hover {
   transform: scale(1.09);
-  opacity: 1;
 }
